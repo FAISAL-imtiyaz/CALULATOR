@@ -1,0 +1,111 @@
+.calculator {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    margin: 50px auto;
+    color: var(--text-color);
+  }
+  
+  .display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: var(--display-background);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .display input {
+    width: 100%;
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: var(--text-color);
+  }
+  
+  .result {
+    font-size: 1.5em;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  .button {
+    font-size: 1.5em;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .button:hover {
+    background: var(--button-hover);
+  }
+  
+  .special-button {
+    background-color: orange;
+    color: white;
+  }
+  
+  .theme-toggle {
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #555;
+    color: white;
+  }
+  
+  .clear-history {
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #555;
+    color: white;
+  }
+  
+  .clear-history:hover {
+    background-color: #777;
+  }
+  
+  :root {
+    --background-color: #333;
+    --text-color: white;
+    --display-background: #444;
+    --button-hover: #555;
+  }
+  
+  .light-theme {
+    --background-color: white;
+    --text-color: black;
+    --display-background: #ddd;
+    --button-hover: #ccc;
+  }
+  
+  @media (min-width: 768px) {
+    .buttons {
+      grid-template-columns: repeat(10, 1fr);
+    }
+  }
+  
+  .history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  

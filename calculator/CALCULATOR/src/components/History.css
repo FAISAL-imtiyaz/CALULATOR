@@ -1,0 +1,20 @@
+/* src/components/History.css */
+
+.history {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    background: var(--background-color);
+    border-radius: 10px;
+    color: var(--text-color);
+  }
+  
+  .history ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .history li {
+    margin: 5px 0;
+  }
+  
